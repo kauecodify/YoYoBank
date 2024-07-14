@@ -1,4 +1,6 @@
-* {}
+* {
+    
+}
 
 nav {
     background-color: #aaaaaa;
@@ -73,4 +75,84 @@ nav a:hover {
     margin: 10px 0 0;
     font-size: 14px;
     color: #333;
+}
+.sobre {
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    border-radius: 50px;
+}
+
+.sobre h1, .sobre h2, .sobre h3 {
+    color: #686868;
+    padding: 10px 0;
+}
+
+.sobre p {
+    margin: 10px 0;
+}
+
+.sobre ul {
+    list-style-type: disc;
+    margin: 10px 0; 
+    padding-left: 20px;
+}
+
+.sobre li {
+    margin-bottom: 10px;
+}
+
+.assinaturas {
+    text-align: center;
+    color: #686868;
+    padding: 10px 0;
+}
+
+/* ações passando na time*/
+.ticker-wrapper {
+    padding: 20px;
+    overflow: hidden;
+    background: #000;
+    white-space: nowrap;
+    box-sizing: border-box;
+    position: relative;
+    display: 100%;
+    height: 2.5rem;
+    border-radius: 50px;
+}
+
+.ticker {
+    display: inline-block;
+    padding-left: 100%;
+    animation: ticker 120s linear infinite;
+    position: absolute;
+    white-space: nowrap;
+}
+
+.ticker-item {
+    display: inline-block;
+    padding: 0px 5rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+@keyframes ticker {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+.positive {
+    color: rgb(0, 255, 0);
+}
+
+.near-zero {
+    color: rgb(255, 255, 0);
+}
+
+.negative {
+    color: rgb(255, 0, 0);
 }
